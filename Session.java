@@ -1,4 +1,3 @@
-import static javax.swing.text.rtf.RTFAttributes.BooleanAttribute.False;
 
 public class Session {
     String Name;
