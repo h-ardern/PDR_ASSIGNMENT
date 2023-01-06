@@ -15,8 +15,10 @@ public class Corporate_Body {
         }
 
         public void add_Employee(String emp){
-            Employees.add(emp);
+            this.Employees.add(emp);
         }
 
-
+        public void remove_Employee(String emp){
+            this.Employees.add(emp);
+        }
 }
