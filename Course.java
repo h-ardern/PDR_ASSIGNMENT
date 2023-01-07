@@ -17,5 +17,11 @@ public class Course {
         this.Price = price;
 
     }
-    public.v
+    public void addSession(Session Sess){
+        this.Contents.put(Sess.ID,Sess);
+    }
+
+    public void removeSession(int sessID){
+        this.Contents.remove(sessID);
+    }
 }
