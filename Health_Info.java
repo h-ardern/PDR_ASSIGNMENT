@@ -5,5 +5,5 @@ public class Health_Info {
     HashSet condition = new HashSet();
     //rest of hashset
   }
-  }
 }
+
