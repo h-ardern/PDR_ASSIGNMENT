@@ -8,7 +8,7 @@ public class Course {
     @Column(name = 'name')
     String Name;
     ArrayList<Session> Contents;
-    @Colum(name = 'price')
+    @Column(name = 'price')
     int Price;
 
     Boolean Completed;
