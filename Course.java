@@ -1,24 +1,32 @@
 import java.util.*;
-
+@Entitiy
+@Table(name = 'Courses');
 public class Course {
+    @Id @GeneratedValue
+    @Column(name = 'id')
     int ID;
+    @Column(name = 'name')
     String Name;
     ArrayList<Session> Contents;
+    @Colum(name = 'price')
     int Price;
 
     Boolean Completed;
 
-    public Course(int id ,String name, ArrayList<Session> contents,int price){
-        this.ID = id;
+    public Course(){
+    }
+    public int getID(){
+        return ID;
+    }
+    public void setName(String name){
         this.Name = name;
-        for(int i = 0; i < contents.size();i ++){
-            Session Sess = contents.get(i);
-            this.Contents.add(Sess);
+    }
 
-        }
+    public void setPrice(int price){
         this.Price = price;
-        this.Completed = false;
-
+    }
+    public void setStatus(boolean completed){
+        this.Completed = completed;
     }
     public void addSession(Session Sess, int index){
         this.Contents.add(index,Sess);
